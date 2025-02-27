@@ -1,0 +1,87 @@
+body {
+  background-color: var(--bs-dark);
+}
+
+.joke-content {
+  background-color: var(--bs-dark);
+  border: 1px solid var(--bs-border-color);
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#jokeText, #jokeDelivery {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card {
+  background-color: var(--bs-dark-bg-subtle);
+  border: none;
+}
+
+#generateBtn {
+  min-width: 150px;
+}
+
+.spinner-border {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#errorAlert {
+  transition: all 0.3s ease-in-out;
+}
+
+#errorAlert i {
+  margin-right: 8px;
+}
+
+select.form-select {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 1rem;
+  }
+  
+  .card {
+      margin: 0;
+  }
+}
+
+.list-group-item {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-border-color);
+}
+
+.list-group-item p {
+  margin: 0;
+  word-break: break-word;
+}
+
+#savedJokesList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.btn-outline-success:disabled,
+.btn-outline-info:disabled {
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 1rem;
+  }
+
+  .card {
+      margin: 0;
+  }
+
+  .gap-3 {
+      gap: 0.5rem !important;
+  }
+}
